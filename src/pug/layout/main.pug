@@ -1,0 +1,19 @@
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		link(rel="stylesheet" type='text/css' href="static/css/main.css")
+
+	body(class=pageClass)
+		.wrapper
+			include ../modules/products
+			
+			
+		//- script(src="static/js/libs.min.js")
+		script(src="static/js/main.js")
+		block script

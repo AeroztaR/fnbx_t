@@ -1,0 +1,45 @@
+// $breakpoints: (
+//     "phone":        360px,
+//     "phone-wide":   480px,
+//     "phablet":      560px,
+//     "tablet-small": 640px,
+//     "tablet":       768px,
+//     "tablet-wide":  1024px,
+//     "desktop":      1248px,
+//     "desktop-wide": 1440px
+// );
+
+$phone: "(min-width: 320px) and (max-width: 480px)";
+$phone-wide: "(min-width: 480px) and (max-width: 670px)";
+$tablet-small: "(min-width: 670px) and (max-width: 768px)";
+$tablet-wide: "(min-width: 768px) and (max-width: 1160px)";
+
+// $phone
+@media #{$phone} {
+    .products__wrap {
+        justify-content: center;
+    }
+};
+
+// $phone-wide
+@media #{$phone-wide} {
+    .products__wrap {
+        justify-content: center;
+    }
+};
+
+// $tablet-small
+@media #{$tablet-small} {
+    .products__wrap {
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+};
+
+// $tablet-wide
+@media #{$tablet-wide} {
+    .products__wrap {
+        justify-content: space-around;
+        padding: 0 40px;
+    }
+};
